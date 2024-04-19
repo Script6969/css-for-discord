@@ -1,0 +1,35 @@
+/* Nastavení barvy pozadí a textu */
+:root {
+  --background-color: #2c2f33;
+  --text-color: #ffffff;
+  --background-image: url('https://media.discordapp.net/attachments/1230815079340048426/1230815121111253032/mr.bobot1.jpg?ex=6634b0e8&is=66223be8&hm=2257100ea488084b118e57a112021cc71fd829a1fae5f473338196965868e24f&=&format=webp&width=225&height=126');
+}
+
+/* Úprava barvy kanálového seznamu */
+div[class^="sidebar-"] {
+  background-color: var(--background-color) !important;
+  color: var(--text-color) !important;
+}
+
+/* Úprava barvy textu v zprávách */
+div[class^="message-"] {
+  color: var(--text-color) !important;
+}
+
+/* Zvýraznění odkazů */
+a {
+  color: #7289da !important;
+}
+
+/* Úprava pozadí chatboxu */
+div[class^="chat-"] {
+  background-color: #36393f !important;
+  background-image: var(--background-image) !important;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Skrytí obrázku profilu v chatboxu */
+div[class^="avatar-"] {
+  display: none !important;
+}
